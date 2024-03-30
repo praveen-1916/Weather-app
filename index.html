@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER MAP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="city">
+                <div class="searchCityNAme">
+                    <input id="search" type="text" placeholder="Search for a city..." value="New York">
+                    <i class="fa-solid fa-magnifying-glass" id="icon"></i>
+                </div>
+
+                <div class="unitType">
+                    <span id="celsius"><sup>o</sup>C</span>
+                    <span id="fahrenheit"><sup>o</sup>F</span>
+                </div>
+            </div>
+            <div class="information">
+                <h2 id="cityName">New York, United States</h2>
+                <p></p>
+            </div>
+            <div class="details">
+                <div class="skyInformation">Clouds</div>
+                <div class="skyIcon"><img src="clear.png" alt="Weather"></div>
+                <div id="temperature">15°</div>
+                <div class="minMaxTemp">
+                    <span>Min: <span id="minTemp">10°</span></span>
+                    <span>Max: <span id="maxTemp">10°</span></span>
+                </div>
+            </div>
+            <div class="moreDetails">
+                <div class="realFeel">
+                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                    <div class="nameValue">
+                        <h4>Real Feel</h4>
+                        <span id="feelValue">11°</span>
+                    </div>
+                </div>
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="nameValue">
+                        <h4>Humidity</h4>
+                        <span id="humidityValue">11%</span>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="nameValue">
+                        <h4>Wind</h4>
+                        <span id="windValue">11m/s</span>
+                    </div>
+                </div>
+                <div class="pressure">
+                    <i class="fa-solid fa-gauge"></i>
+                    <div class="nameValue">
+                        <h4>Pressure</h4>
+                        <span id="pressureValue">11hpa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
